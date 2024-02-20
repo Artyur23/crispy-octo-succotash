@@ -617,10 +617,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.course__text h3,
-.course__text-footer h4 {
-  min-height: 3em; /* Zapewnia stałą wysokość dla nagłówków */
-}
 .course__text h3 {
   color: #1c1c1c;
   font-size: 24px;
