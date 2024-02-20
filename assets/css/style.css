@@ -577,59 +577,49 @@ body {
   color: #e43056;
 }
 /* courses__items */
+/* Existing CSS for courses__items outside of media query */
 .courses__items {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-  row-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-content: center;
 }
+
 .courses__card {
   border-radius: 30px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 30px 0px #9795a6;
   box-shadow: 0px 0px 30px 0px #9795a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 400px;
   width: 100%;
+  overflow: hidden;
 }
+
 .courses__card iframe {
-  min-height: 226px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  width: 100%;
-}
-
-.responsive-iframe-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%; /* Aspect ratio of 16:9 (9 / 16 = 0.5625) */
-}
-
-.responsive-iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .course__text {
   padding: 20px 30px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Zapewnia, że stopka jest zawsze na dole, a h3 na górze */
 }
 .course__text-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 20px;
+}
+.course__text h3,
+.course__text-footer h4 {
+  min-height: 3em; /* Zapewnia stałą wysokość dla nagłówków */
 }
 .course__text h3 {
   color: #1c1c1c;

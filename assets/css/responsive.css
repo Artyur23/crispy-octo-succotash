@@ -1,3 +1,11 @@
+.courses__card {
+  margin: 0;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .courses__card {
+    margin: auto;
+  }
+}
 /* @media screen and (min-width: 576px) {
 } */
 @media screen and (min-width: 991px) {
@@ -175,10 +183,7 @@
     font-size: 16px;
     line-height: 30px;
   }
-  .courses__items {
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .moto__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -468,5 +473,17 @@
     -webkit-transform: unset;
     -ms-transform: unset;
     transform: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  .courses__items {
+    display: grid;
+    grid-template-columns: 1fr; /* Zapewnia układ jednokolumnowy */
+    justify-content: center; /* Wyśrodkowanie kart w kontenerze */
+    gap: 30px; /* Opcjonalnie, dostosuj odstępy między kartami */
+  }
+
+  .courses__card {
+    max-width: 100%; /* Pozwala kartom zajmować całą dostępną szerokość */
   }
 }
