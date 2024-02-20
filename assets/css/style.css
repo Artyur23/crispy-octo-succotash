@@ -276,7 +276,6 @@ body {
 .video-wrapper {
   overflow: hidden;
   float: left;
-  position: relative;
 }
 .idea__header h2,
 .hero__title {
