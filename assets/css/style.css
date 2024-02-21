@@ -531,6 +531,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
+
 .classes__rocket {
   -webkit-transform: rotate(-20deg) translateY(-200px);
   -ms-transform: rotate(-20deg) translateY(-200px);
