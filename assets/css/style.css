@@ -194,7 +194,7 @@ body {
   font-weight: 500;
 }
 
-.main_menu:hover
+.main_menu :hover
 {
   color: #e53057;
 }
