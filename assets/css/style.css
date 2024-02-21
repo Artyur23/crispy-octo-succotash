@@ -193,6 +193,12 @@ body {
   line-height: 24px;
   font-weight: 500;
 }
+
+.main_menu:hover
+{
+  color: #e53057;
+}
+
 .header_action {
   display: -webkit-box;
   display: -ms-flexbox;
