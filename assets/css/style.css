@@ -186,10 +186,9 @@ body {
   column-gap: 50px;
   width: 100%;
 }
-.main_menu :hover{
+.main_menu li a:hover {
   color: #e53057;
 }
-
 .main_menu li a {
   text-decoration: none;
   color: #251d68;
